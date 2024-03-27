@@ -25,10 +25,10 @@ public class BishopBlack implements Figure {
                     String.format("Could not move by diagonal from %s to %s", position, dest)
             );
         }
-        int size = Math.abs(position.getX()-dest.getX());
+        int size = Math.abs(position.getX() - dest.getX());
         Cell[] steps = new Cell[size];
-        int deltaX = (dest.getX() - position.getX())/Math.abs(position.getX() - dest.getX());
-        int deltaY = (dest.getY() - position.getY())/Math.abs(position.getY() - dest.getY());
+        int deltaX = (dest.getX() - position.getX()) / Math.abs(position.getX() - dest.getX());
+        int deltaY = (dest.getY() - position.getY()) / Math.abs(position.getY() - dest.getY());
         int x = position.getX();
         int y = position.getY();
         for (int i = 0; i < size; i++) {
