@@ -26,10 +26,10 @@ class BishopBlackTest {
     @Test
     void wayFromH6ToD2() {
         Cell[] expected = new Cell[] {
-                Cell.findBy(6, 3),
-                Cell.findBy(5, 4),
-                Cell.findBy(4, 5),
-                Cell.findBy(3, 6)
+                Cell.G5,
+                Cell.F4,
+                Cell.E3,
+                Cell.D2
         };
         Cell position = Cell.H6;
         Cell destination = Cell.D2;
@@ -41,12 +41,12 @@ class BishopBlackTest {
     @Test
     void wayFromA7ToG1() {
         Cell[] expected = new Cell[] {
-                Cell.findBy(1, 2),
-                Cell.findBy(2, 3),
-                Cell.findBy(3, 4),
-                Cell.findBy(4, 5),
-                Cell.findBy(5, 6),
-                Cell.findBy(6, 7)
+                Cell.B6,
+                Cell.C5,
+                Cell.D4,
+                Cell.E3,
+                Cell.F2,
+                Cell.G1
         };
         Cell position = Cell.A7;
         Cell destination = Cell.G1;
